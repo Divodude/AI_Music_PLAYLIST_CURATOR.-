@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Play, Pause, Music, Sparkles, Headphones, Heart, Share2, ExternalLink } from "lucide-react"
+import { AdSenseAd } from "@/components/adsense-ad"
 
 interface Song {
   id: string
@@ -332,6 +333,12 @@ export default function AIPlaylistGenerator() {
           </div>
 
           {/* Input Section */}
+          <AdSenseAd
+            adSlot="1234567890"
+            style={{ display: "block", width: "728px", height: "90px" }}
+            className="mx-auto mb-4"
+            adFormat="banner"
+          />
           <Card className="bg-white/95 backdrop-blur-lg border-0 shadow-2xl mb-8">
             <CardContent className="p-8">
               <div className="space-y-6">
@@ -421,6 +428,12 @@ export default function AIPlaylistGenerator() {
           {/* Playlist Section */}
           {playlist.length > 0 && (
             <div id="playlist" className="animate-fade-in">
+              <AdSenseAd
+                adSlot="3456789012"
+                style={{ display: "block", width: "728px", height: "90px" }}
+                className="mx-auto my-6"
+                adFormat="banner"
+              />
               <Card className="bg-white/95 backdrop-blur-lg border-0 shadow-2xl">
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
@@ -461,6 +474,12 @@ export default function AIPlaylistGenerator() {
               </Card>
             </div>
           )}
+          <AdSenseAd
+            adSlot="5678901234"
+            style={{ display: "block", width: "728px", height: "90px" }}
+            className="mx-auto mt-8"
+            adFormat="banner"
+          />
         </div>
       </div>
 

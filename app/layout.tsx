@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#9333ea",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -47,6 +47,13 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
+
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1839917873699847"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
